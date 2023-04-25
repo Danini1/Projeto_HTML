@@ -1,0 +1,11 @@
+
+main div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main div p{
+    margin-top: 10px;
+}
