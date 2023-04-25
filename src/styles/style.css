@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background-image: url("/assets/image_background.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+h2{
+    color: white;
+    margin-bottom: 32px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color: #3e8e41;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: 22px;
+}
+button:hover{
+    background-color: #3e3e91;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    font-size: 16px;
+    opacity: 0.5;
+}
