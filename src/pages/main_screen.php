@@ -20,14 +20,14 @@
             <div class="menu">
                 <button>Cadastrar</button>
                 <div class="itens">
-                    <button><a href="/src/pages/cad_produtos.html">Produto</a></button>
-                    <button><a href="/src/pages/cad_fornecedores.html">Fornecedor</a></button>
+                    <button><a href="http://localhost:8100/src/pages/cad_produtos.php">Produto</a></button>
+                    <button><a href="http://localhost:8100/src/pages/cad_fornecedores.php">Fornecedor</a></button>
                 </div>
             </div>
             <button>Produtos</button>
             <button>Fornecedores</button>
-            <button><a href="/src/pages/main_screen.html">Menu</a></button>
-            <button><a href="/src/pages/index.html">Sair</a></button>
+            <button><a href="http://localhost:8100/src/pages/main_screen.php">Menu</a></button>
+            <button><a href="http://localhost:8100/src/pages/index.php">Sair</a></button>
         </div>
     </header>
     <main>
