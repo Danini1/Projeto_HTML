@@ -7,7 +7,7 @@
     $sql = "INSERT INTO usuarios (username, password) VALUES ('$username', '$password')";
     if (mysqli_query($con, $sql)) {
       echo "Usuário cadastrado com sucesso!";
-      header("Location: main_screen.php");
+      header("Location: ../pages/ListaFornecedores.php");
     } else {
       echo "Erro ao cadastrar usuário: " . mysqli_error($con);
     }

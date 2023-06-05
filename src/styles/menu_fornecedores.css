@@ -1,0 +1,93 @@
+main > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main > div p{
+    margin-top: 10px;
+}
+
+main > div > h1, main > h1 {
+    text-align: center;
+    color: var(--gray-dark);
+
+    margin-top: 2rem;
+}
+
+.suppliers-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2rem;
+    padding: 0 2% 2rem;
+}
+
+.supplier {
+    max-width: 520px;
+    width: 100%;
+
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    
+    background-color: var(--gray-dark);
+    border-radius: 8px;
+    
+    padding: 1rem;
+}
+
+.supplier .info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 0;
+}
+
+.supplier .icons {
+    display: flex;
+    align-items: initial;
+}
+
+.supplier header .icons button {
+    font-size: 0;
+    cursor: pointer;
+}
+
+.supplier header .icons button:hover::after {
+    display: none;
+}
+
+.supplier .icons img {
+    width: 1.5rem;
+}
+
+.supplier .info span {
+    margin-top: 0;
+}
+
+.suppliers-list > div + div {
+    margin-top: 1rem;
+}
+
+.supplier > div {
+    margin-top: 1rem;
+}
+
+.supplier header {
+    width: 100%;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    
+    background-color: transparent;
+
+    padding: 0;
+}
+
+.supplier header h1 {
+    font-family: 'Roboto', sans-serif;
+}

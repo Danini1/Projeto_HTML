@@ -15,7 +15,7 @@
 <body>
     <div class="background">
         <div class="container">
-            <form method ="POST" action="register.php">
+            <form method ="POST" action="../controllers/register.php">
                 <h2>Cadastro</h2>
                 <input type="text" placeholder="Usuario" id="username" name = "username" required>
                 <input type="password" placeholder="Senha" id="password" name = "password" required>

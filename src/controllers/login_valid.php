@@ -12,7 +12,7 @@
     if (mysqli_num_rows($result) == 1) {
       // Login bem-sucedido
       $_SESSION["username"] = $username;
-      header("Location: main_screen.php");
+      header("Location: ../pages/ListaFornecedores.php");
     } else {
       // Credenciais inválidas
       echo "Credenciais inválidas!";

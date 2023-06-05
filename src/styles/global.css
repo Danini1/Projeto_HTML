@@ -1,3 +1,7 @@
+:root {
+    --gray-dark: rgba(22, 27, 34, 0.9);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -13,7 +17,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 2%;
-    background-color: rgba(22, 27, 34, 0.9);
+    background-color: var(--gray-dark);
     height: 4rem;
 }
 
@@ -83,6 +87,20 @@ header button:hover::after{
     background: transparent;
 }
 
+.selected {
+    color:rgb(49, 179, 72);
+    border-bottom: 1px solid rgb(49, 179, 72);
+}
+
 main{
     height: calc(100vh - 4rem);
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3e8e41;
+    border-radius: 8px;
 }
