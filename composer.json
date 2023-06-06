@@ -1,0 +1,13 @@
+{
+    "name": "selladmnistrator",
+    "description": "Projeto de admnistração de vendas",
+    "type": "project",
+    "require": {
+        "vendor/package": "versão-desejada"
+    },
+    "autoload": {
+        "psr-4": {
+            "C:\\Users\\Danil\\OneDrive\\Documentos\\daniel\\": "src/"
+        }
+    }
+}
