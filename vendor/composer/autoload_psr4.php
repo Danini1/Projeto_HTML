@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'C:\\Users\\Danil\\OneDrive\\Documentos\\daniel\\' => array($baseDir . '/src'),
+    'C:\\Users\\Danil\\daniel\\' => array($baseDir . '/src'),
 );

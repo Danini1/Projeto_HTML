@@ -3,7 +3,7 @@
         'name' => 'dani/selladministrator',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4584b34ab8be1f407b08788816957ea5617f502c',
+        'reference' => '0f045c7d6fc71e617a1b686845deaa12807eebd2',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'dani/selladministrator' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4584b34ab8be1f407b08788816957ea5617f502c',
+            'reference' => '0f045c7d6fc71e617a1b686845deaa12807eebd2',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
