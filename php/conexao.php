@@ -1,7 +1,7 @@
 <?php //session_start();
 
 	$servidor = "us-cdbr-east-06.cleardb.net";
-	$b08e5618984bbc = "root";
+	$usuario = "b08e5618984bbc";
 	$senha = "68f1c231";
 	$db_name = "heroku_ba2905b51a84dfb";
 	
