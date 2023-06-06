@@ -37,22 +37,22 @@
     <header>
         <h1>Welcome, Admnistrator.</h1>
         <div>
-            <button><a href="http://localhost:8100/src/pages/ListaFornecedores.php">Fornecedores</a></button>
-            <button><a href="http://localhost:8100/src/pages/ListaProdutos.php">Produtos</a></button>
+            <button><a href="./ListaFornecedores.php">Fornecedores</a></button>
+            <button><a href="./ListaProdutos.php">Produtos</a></button>
             <div class="menu">
-                <button class="selected">Cadastrar</button>
+                <button class="selected"><?=isset($fornecedor) ? "Atualizar" : "Cadastrar"?></button>
                 <div class="itens">
-                    <button><a href="http://localhost:8100/src/pages/FormularioProdutos.php" class="selected">Produto</a></button>
-                    <button><a href="http://localhost:8100/src/pages/FormularioFornecedores.php">Fornecedor</a></button>
+                    <button><a href="./FormularioProdutos.php" class="selected">Produto</a></button>
+                    <button><a href="./FormularioFornecedores.php">Fornecedor</a></button>
                 </div>
             </div>
-            <button><a href="http://localhost:8100/src/pages/index.php">Sair</a></button>
+            <button><a href="../../index.php">Sair</a></button>
         </div>
     </header>
     <main>
         <div>
             <h1><?=isset($produto) ? "Atualizar Produto" : "Cadastrar Produto"?></h1>
-            <form method = "POST" action="http://localhost:8100/src/controllers/register-products.php">
+            <form method = "POST" action="../controllers/register-products.php">
                 <div>
                     <div>
                         <input 
@@ -60,24 +60,28 @@
                             placeholder="Código do produto"
                             value="<?=isset($produto) ? $produto -> getCodigo() : ""?>"
                             name="product-code"
+                            required
                         >
                         <input 
                             type="text"
                             placeholder="Descrição do produto"
                             value="<?=isset($produto) ? $produto -> getDescricao() : ""?>"
                             name="product-description"
+                            required
                         >
                         <input 
                             type="text"
                             placeholder="Estoque inicial"
                             value="<?=isset($produto) ? $produto -> getEstoqueInicial() : ""?>"
                             name="product-initial-amount"
+                            required
                         >
                         <input 
                             type="number"
                             placeholder="Preço de venda do produto"
                             value="<?=isset($produto) ? $produto -> getPrecoVenda() : ""?>"
                             name="product-sell-price"
+                            required
                         >
                     </div>
                     <div>
@@ -86,24 +90,28 @@
                             placeholder="Nome Produto"
                             value="<?=isset($produto) ? $produto -> getNome() : ""?>"
                             name="product-name"
+                            required
                         >
                         <input 
                             type="number"
                             placeholder="Estoque atual"
                             value="<?=isset($produto) ? $produto -> getEstoqueAtual() : ""?>"
                             name="product-currenty-amount"
+                            required
                         >
                         <input 
                             type="text"
                             placeholder="Fornecedor"
                             value="<?=isset($produto) ? $produto -> getFornecedor() : ""?>"
                             name="product-supplier-code"
+                            required
                         >
                         <input 
                             type="number"
                             placeholder="Preço de compra do produto"
                             value="<?=isset($produto) ? $produto -> getPrecoCompra() : ""?>"
                             name="product-buy-price"
+                            required
                         >
                     </div>
                 </div>

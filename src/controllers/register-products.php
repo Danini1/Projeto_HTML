@@ -23,7 +23,7 @@
           currenty_amount=$productCurrentyAmount,
           supplier_code=$productSupplierCode,
           buy_price=$productBuyPrice,
-          sell_price='$productSellPrice'
+          sell_price=$productSellPrice
         WHERE code=$productCode;
     ";
     } else {
@@ -36,7 +36,7 @@
               $productCurrentyAmount,
               $productSupplierCode,
               $productBuyPrice,
-              '$productSellPrice'
+              $productSellPrice
             )
     ";
     }

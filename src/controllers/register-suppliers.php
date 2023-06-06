@@ -19,7 +19,7 @@
             email='$supplierEmail',
             phone=$supplierPhone,
             cnpj=$supplierCNPJ,
-            address='$supplierAddress',
+            address='$supplierAddress'
           WHERE code=$supplierCode;
         ";
     } else {

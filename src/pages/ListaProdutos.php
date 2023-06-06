@@ -42,16 +42,16 @@
     <header>
         <h1>Welcome, Admnistrator.</h1>
         <div>
-            <button><a href="http://localhost:8100/src/pages/ListaFornecedores.php">Fornecedores</a></button>
-            <button><a href="http://localhost:8100/src/pages/ListaProdutos.php" class="selected">Produtos</a></button>
+            <button><a href="./ListaFornecedores.php">Fornecedores</a></button>
+            <button><a href="./ListaProdutos.php" class="selected">Produtos</a></button>
             <div class="menu">
                 <button>Cadastrar</button>
                 <div class="itens">
-                    <button><a href="http://localhost:8100/src/pages/FormularioProdutos.php">Produto</a></button>
-                    <button><a href="http://localhost:8100/src/pages/FormularioFornecedores.php">Fornecedor</a></button>
+                    <button><a href="./FormularioProdutos.php">Produto</a></button>
+                    <button><a href="./FormularioFornecedores.php">Fornecedor</a></button>
                 </div>
             </div>
-            <button><a href="http://localhost:8100/src/pages/index.php">Sair</a></button>
+            <button><a href="../../index.php">Sair</a></button>
         </div>
     </header>
     <main>
@@ -80,14 +80,12 @@
                             </div>
 
                             <div class="icons">
-                                <a href="http://localhost:8100/src/pages/FormularioProdutos.php?code=<?= $item -> getCodigo() ?>">
+                                <a href="./FormularioProdutos.php?code=<?= $item -> getCodigo() ?>">
                                     <img src="/assets/icons/edit.svg" alt="Edit product">
                                 </a>
 
                                 <button>
-                                    <a href="http://localhost:8100/src/pages/RemoverFormulario.php">
-                                        <img src="/assets/icons/delete.svg" alt="Delete product">
-                                    </a>
+                                    <img src="/assets/icons/delete.svg" alt="Delete product">
                                 </button>
                             </div>
                         </header>

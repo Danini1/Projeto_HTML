@@ -35,16 +35,16 @@
     <header>
         <h1>Welcome, Admnistrator.</h1>
         <div>
-            <button><a href="http://localhost:8100/src/pages/ListaFornecedores.php">Fornecedores</a></button>
-            <button><a href="http://localhost:8100/src/pages/ListaProdutos.php" class="selected">Produtos</a></button>
+            <button><a href="./ListaFornecedores.php">Fornecedores</a></button>
+            <button><a href="./ListaProdutos.php" class="selected">Produtos</a></button>
             <div class="menu">
                 <button>Cadastrar</button>
                 <div class="itens">
-                    <button><a href="http://localhost:8100/src/pages/FormularioProdutos.php">Produto</a></button>
-                    <button><a href="http://localhost:8100/src/pages/FormularioFornecedores.php">Fornecedor</a></button>
+                    <button><a href="./FormularioProdutos.php">Produto</a></button>
+                    <button><a href="./FormularioFornecedores.php">Fornecedor</a></button>
                 </div>
             </div>
-            <button><a href="http://localhost:8100/src/pages/index.php">Sair</a></button>
+            <button><a href="../../index.php">Sair</a></button>
         </div>
     </header>
     <main>
@@ -52,7 +52,7 @@
             <h1>Remover produto</h1>
 
             <input type="number" placeholder="Informe o codigo" name="codeInput">
-            <form style="display: <?=isset($produto) ? 'block' : 'none'?>" method = "POST" action="http://localhost:8100/src/controllers/register-products.php">
+            <form style="display: <?=isset($produto) ? 'block' : 'none'?>" method = "POST" action="../controllers/register-products.php">
                 <div>
                     <div>
                         <input 

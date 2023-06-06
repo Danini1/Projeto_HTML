@@ -15,12 +15,12 @@
 <body>
     <div class="background">
         <div class="container">
-            <form method ="POST" action="../controllers/register.php">
+            <form method ="POST" action="./src/controllers/register.php">
                 <h2>Cadastro</h2>
                 <input type="text" placeholder="Usuario" id="username" name = "username" required>
                 <input type="password" placeholder="Senha" id="password" name = "password" required>
                 <button type="submit">Cadastrar</button>
-                <a href="http://localhost:8100/src/pages/index.php">Ja tem login ? Clique aqui</a>
+                <a href="./index.php">Ja tem login ? Clique aqui</a>
             </form>
         </div>
     </div>

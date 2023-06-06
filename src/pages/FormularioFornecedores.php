@@ -36,22 +36,22 @@
     <header>
         <h1>Welcome, Admnistrator.</h1>
         <div>
-            <button><a href="http://localhost:8100/src/pages/ListaFornecedores.php">Fornecedores</a></button>
-            <button><a href="http://localhost:8100/src/pages/ListaProdutos.php">Produtos</a></button>
+            <button><a href="./ListaFornecedores.php">Fornecedores</a></button>
+            <button><a href="./ListaProdutos.php">Produtos</a></button>
             <div class="menu">
-                <button class="selected">Cadastrar</button>
+                <button class="selected"><?=isset($fornecedor) ? "Atualizar" : "Cadastrar"?></button>
                 <div class="itens">
-                    <button><a href="http://localhost:8100/src/pages/FormularioProdutos.php">Produto</a></button>
-                    <button><a href="http://localhost:8100/src/pages/CadastroFornecedores.php" class="selected">Fornecedor</a></button>
+                    <button><a href="./FormularioProdutos.php">Produto</a></button>
+                    <button><a href="./CadastroFornecedores.php" class="selected">Fornecedor</a></button>
                 </div>
             </div>
-            <button><a href="http://localhost:8100/src/pages/index.php">Sair</a></button>
+            <button><a href="../../index.php">Sair</a></button>
         </div>
     </header>
     <main>
         <div>
             <h1><?=isset($fornecedor) ? "Atualizar Fornecedor" : "Cadastrar Fornecedor"?></h1>
-            <form method= "POST" action="http://localhost:8100/src/controllers/register-suppliers.php">
+            <form method= "POST" action="../controllers/register-suppliers.php">
                 <div>
                     <div>
                         <input 
@@ -59,18 +59,21 @@
                             placeholder="Código do fornecedor"
                             value="<?=isset($fornecedor) ? $fornecedor -> getCodigo() : ""?>"
                             name="supplier-code"
+                            required
                         >
                         <input
                             type="text"
                             placeholder="Nome do fornecedor"
                             value="<?=isset($fornecedor) ? $fornecedor -> getNome() : ""?>"
                             name="supplier-name"
+                            required
                         >
                         <input 
                             type="number" 
                             placeholder="CNPJ do fornecedor"
                             value="<?=isset($fornecedor) ? $fornecedor -> getCnpj() : ""?>"
                             name="supplier-cnpj"
+                            required
                         >
                     </div>
                     <div>
@@ -79,18 +82,21 @@
                             placeholder="Telefone do fornecedor"
                             value="<?=isset($fornecedor) ? $fornecedor -> getTelefone() : ""?>"
                             name="supplier-phone"
+                            required
                         >
                         <input 
                             type="email" 
                             placeholder="E-mail do fornecedor"
                             value="<?=isset($fornecedor) ? $fornecedor -> getEmail() : ""?>"
                             name="supplier-email"
+                            required
                         >
                         <input 
                             type="text" 
                             placeholder="Endereço do fornecedor"
                             value="<?=isset($fornecedor) ? $fornecedor -> getEndereco() : ""?>"
                             name="supplier-address"
+                            required
                         >
                     </div>
                 </div>
