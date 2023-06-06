@@ -1,1 +1,1 @@
-web: php C:\Users\Danil\daniel\src\pages\index.php.py
+web: php C:\Users\Danil\daniel\src\pages\index.php
