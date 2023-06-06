@@ -1,9 +1,9 @@
 {
-    "name": "selladmnistrator",
+    "name": "dani/selladministrator",
     "description": "Projeto de admnistração de vendas",
     "type": "project",
     "require": {
-        "vendor/package": "versão-desejada"
+       
     },
     "autoload": {
         "psr-4": {
