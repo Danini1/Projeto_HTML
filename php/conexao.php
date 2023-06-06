@@ -1,9 +1,9 @@
 <?php //session_start();
 
-	$servidor = "localhost";
-	$usuario = "root";
-	$senha = "";
-	$db_name = "db_usuario";
+	$servidor = "us-cdbr-east-06.cleardb.net";
+	$b08e5618984bbc = "root";
+	$senha = "68f1c231";
+	$db_name = "heroku_ba2905b51a84dfb";
 	
 	
 	$con = new mysqli($servidor,$usuario,$senha,$db_name);
